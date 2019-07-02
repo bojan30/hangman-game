@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+</head>
+<body>
+  <!--canvas for drawing-->
+  <div class="container">
+    <canvas id="canvas" width=250 height=250></canvas>
+    <div class="word">
+      <ul id = "word-ul">
+        <!--dynamic letters-->
+      </ul>
+    </div>
+    <div class="keyboard">
+      <div class="keyboard-row">
+        <div class="key-letter">
+          Q
+        </div>
+        <div class="key-letter">
+          W
+        </div>
+        <div class="key-letter">
+          E
+        </div>
+        <div class="key-letter">
+          R
+        </div>
+        <div class="key-letter">
+          T
+        </div>
+        <div class="key-letter">
+          Y
+        </div>
+        <div class="key-letter">
+          U
+        </div>
+        <div class="key-letter">
+          I
+        </div>
+        <div class="key-letter">
+          O
+        </div>
+        <div class="key-letter">
+          P
+        </div>
+      </div>
+
+      <div class="keyboard-row">
+        <div class="key-letter">
+          A
+        </div>
+        <div class="key-letter">
+          S
+        </div>
+        <div class="key-letter">
+          D
+        </div>
+        <div class="key-letter">
+          F
+        </div>
+        <div class="key-letter">
+          G
+        </div>
+        <div class="key-letter">
+          H
+        </div>
+        <div class="key-letter">
+          J
+        </div>
+        <div class="key-letter">
+          K
+        </div>
+        <div class="key-letter">
+          L
+        </div>
+      </div>
+
+      <div class="keyboard-row">
+        <div class="key-letter">
+          Z
+        </div>
+        <div class="key-letter">
+          X
+        </div>
+        <div class="key-letter">
+          C
+        </div>
+        <div class="key-letter">
+          V
+        </div>
+        <div class="key-letter">
+          B
+        </div>
+        <div class="key-letter">
+          N
+        </div>
+        <div class="key-letter">
+          M
+        </div>
+      </div>
+    </div>
+    <!--modal when lost-->
+  </div>
+  <div id="game-over">
+    <!-- <p>You lose!</p>
+    <button id="retry">Retry</button> -->
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
